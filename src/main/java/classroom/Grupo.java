@@ -17,8 +17,8 @@ public class Grupo {
     }
 
     public Grupo(int cantidadEstudiantes, Persona profesor, Asignatura asignatura, int codigo, String horario) {
-        Persona[] personas = new Persona[cantidadEstudiantes];
-        this(personas, profesor, asignatura, codigo, horario);
+        //Persona[] personas = new Persona[cantidadEstudiantes]; si quiero invocar otro constructor el this siempre debe ir primero
+        this(new Persona[cantidadEstudiantes], profesor, asignatura, codigo, horario);
     }
 
     public Grupo(Persona[] estudiantes, Persona profesor, Asignatura asignatura) {
