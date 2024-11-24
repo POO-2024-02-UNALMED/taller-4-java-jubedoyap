@@ -30,13 +30,13 @@ public class Persona {
     }
 
     public Persona(String nombre) { 
-        this.nombre = "";
+        this.nombre = nombre;//Se modifica "" para poder asignar el nombre que se pasa por parámetro
         this.cedula = 1;//Para que imprima 1 en la última línea del main
         totalPersonas++;
     }
     
     public Persona() { //se agregó para crear estudiantes1[1]
-        this.cedula = 0;
+        this.cedula = 0;//Se debe inicializar la constante
     }
     
     public long getCedula() {
