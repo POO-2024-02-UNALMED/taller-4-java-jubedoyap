@@ -5,14 +5,14 @@ public class Grupo {
     public Persona[] estudiantes;
     public Persona profesor;
     public Asignatura asignatura;
-    public final int codigo = 0;
+    public int codigo = 0; //se elimina el final para que el código del grupo pueda ser modificado
     public String horario;
 
     public Grupo(Persona[] estudiantes, Persona profesor, Asignatura asignatura, int codigo, String horario) {
         this.estudiantes = estudiantes;
         this.profesor = profesor;
         this.asignatura = asignatura;
-        this.codigo = codigo;
+        this.codigo = codigo; 
         this.horario = horario;
     }
 

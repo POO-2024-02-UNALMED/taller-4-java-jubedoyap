@@ -8,7 +8,7 @@ public class Persona {
     
     static {
         totalPersonas = 0;
-        cedula = 3;
+        //cedula = 3; //el inicializador estático solo puede dar valor a atributos de clase 
     }
 
     public Persona(long cedula, String nombre) {
@@ -29,8 +29,15 @@ public class Persona {
         totalPersonas++;
     }
 
-    public Persona(String nombre) {
+    public Persona(String nombre) { 
         this.nombre = "";
+        this.cedula = 1;//Para que imprima 1 en la última línea del main
+        totalPersonas++;
+    }
+    
+    public Persona() { //se agregó para crear estudiantes1[1]
+        this.nombre = "";
+        this.cedula = 0;
         totalPersonas++;
     }
     

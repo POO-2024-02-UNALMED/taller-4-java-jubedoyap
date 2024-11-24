@@ -10,14 +10,14 @@ public class Asignatura {
 
     public Asignatura() {
         this("Sin nombre",Tipo.FUNDAMENTACION);
-        this(0);
+        //this(0);
     }
 
-    public Asignatura(int codigoInterno,Tipo tipo) {
-        this("Sin nombre", codigoInterno, 0,tipo);
-    }
+//    public Asignatura(int codigoInterno,Tipo tipo) {
+//        this("Sin nombre", codigoInterno, 0,tipo);
+//    }
 
-    public Asignatura(int codigoExterno,Tipo tipo) {
+    public Asignatura(int codigoExterno,Tipo tipo) { //Se elimina el anterior constructor por ambiguedad y teniendo en cuenta que después se agrega un código interno
         this("Sin nombre", 0, codigoExterno,tipo);
     }
 
@@ -39,11 +39,11 @@ public class Asignatura {
         this.tipo = tipo;
     }
 
-    public void cambiarDatos(int codigoInterno) {
-        this.codigoInterno = codigoInterno;
-    }
+//    public void cambiarDatos(int codigoInterno) {
+//        this.codigoInterno = codigoInterno;
+//    }
 
-    public void cambiarDatos(int codigoExterno) {
+    public void cambiarDatos(int codigoExterno) { //se comenta el anterior método por ambiguedad con este y teniendo en cuenta que no se había método para cambiar código externo
         this.codigoExterno = codigoExterno;
     }
 
