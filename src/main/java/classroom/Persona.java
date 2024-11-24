@@ -36,9 +36,7 @@ public class Persona {
     }
     
     public Persona() { //se agregó para crear estudiantes1[1]
-        this.nombre = "";
         this.cedula = 0;
-        totalPersonas++;
     }
     
     public long getCedula() {
